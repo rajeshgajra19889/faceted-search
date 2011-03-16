@@ -34,9 +34,6 @@
     <Reference Include="Autofac">
       <HintPath>..\..\packages\Autofac.2.2.4.900\lib\NET40\Autofac.dll</HintPath>
     </Reference>
-    <Reference Include="LinqSpecs">
-      <HintPath>..\..\packages\LinqSpecs.1.0.1\LinqSpecs.dll</HintPath>
-    </Reference>
     <Reference Include="log4net">
       <HintPath>..\..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
     </Reference>
@@ -45,9 +42,6 @@
     </Reference>
     <Reference Include="Lokad.Logging">
       <HintPath>..\..\packages\Lokad.Shared.1.5.181.0\lib\Lokad.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="Lokad.Quality">
-      <HintPath>..\..\packages\Lokad.Shared.1.5.181.0\lib\Lokad.Quality.dll</HintPath>
     </Reference>
     <Reference Include="Lokad.Shared">
       <HintPath>..\..\packages\Lokad.Shared.1.5.181.0\lib\Lokad.Shared.dll</HintPath>
@@ -61,6 +55,8 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -85,6 +81,7 @@
     <Compile Include="Common\IVisitor.cs" />
     <Compile Include="Common\IVisitorElement.cs" />
     <Compile Include="Common\Visitor.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
     <Compile Include="FacetedSearch.cs" />
     <Compile Include="IJsonSerializer.cs" />
     <Compile Include="DefaultJsonSerializer.cs" />
@@ -114,6 +111,8 @@
     <Compile Include="QueryBuilder\QueryBuilder.cs" />
     <Compile Include="SD\SearchOptionsSD.cs" />
     <Compile Include="SearchOptions.cs" />
+    <Compile Include="SerializationTypesAttribute.cs" />
+    <Compile Include="Web\FacetedSearchHtmlHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
